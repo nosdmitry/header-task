@@ -1,0 +1,26 @@
+.contacts {
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 100%;
+  //max-width: 365px;
+  min-width: 210px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__phone {
+    margin: 0;
+    padding: 0;
+    color: #1c8a43;
+    text-decoration: none;
+    grid-row: 1;
+  }
+
+  &__email {
+    color: #292929;
+    font-weight: 500;
+  }
+}

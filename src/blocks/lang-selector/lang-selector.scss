@@ -1,0 +1,23 @@
+.lang-selector {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 151px;
+  display: flex;
+  justify-content: space-around;
+  grid-row: 1;
+
+  &__link {
+    text-decoration: none;
+    color: #292929;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}

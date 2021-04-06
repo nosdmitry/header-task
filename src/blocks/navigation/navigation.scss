@@ -1,0 +1,28 @@
+.navigation {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  //max-width: 985px;
+  min-width: 650px;
+  grid-row: 1;
+  grid-column: 1/4;
+  
+  &__link {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 15px;
+    padding: 0;
+    text-decoration: none;
+    color: #292929;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    
+  }
+
+}

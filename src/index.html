@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body class="body">
+  <header class="header">
+
+    <button class="header__logo" aria-label="Логотип"></button>
+
+    <div class="header__content">
+
+      <ul class="navigation">
+        <li class="navigation__list"><a class="navigation__link" href="#">Главная</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="#">Документы</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="#">Доставка</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="#">О компании</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="#">Портфолио</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="#">Новости</a></li>
+      </ul>
+
+      <ul class="lang-selector">
+        <li class="lang-selector__list"><a class="lang-selector__link" href="#">Ru</a></li>
+        <li class="lang-selector__list"><a class="lang-selector__link" href="#">En</a></li>
+        <li class="lang-selector__list"><a class="lang-selector__link" href="#">De</a></li>
+      </ul>
+
+      <!-- <div class="contacts"> -->
+        <a class="contacts contacts__phone" href="tel:+78126290356">+7 (812) 629-03-56</a>
+      <!-- </div> -->
+
+
+      <a class="button button__contacts">
+        <img class="button__img" src=<%=require("./images/geo_1965.png")%>/>Контакты
+      </a>
+      <a class="button button__products">
+        <img class="button__img" src=<%=require("./images/menu_1983.png")%>/>Продукты
+      </a>
+      <form class="search">
+        <input class="search__input" placeholder="Что вы хотите найти?">
+        <button class="search__submit" aria-label="Поиск"></button>
+      </form>
+      <a class="contacts contacts__email" href="#">info@sparta-term.com</a>
+
+    </div>
+
+  </header>
+
+</body>
+
+</html>
