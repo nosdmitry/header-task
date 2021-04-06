@@ -64,15 +64,24 @@
 
 @media (max-width: 590px) {
   .search {
+    position: relative;
     width: 35px;
     justify-self: flex-end;
     border: 1px solid #f9f9f9;
 
     &__input {
       &_type_mobile {
-        display: none;
+        border: 1px solid #f9f9f9;
+        position: absolute;
+        width: 200px;
+        right: 36px;
+        opacity: 1;
+        transition: opacity .2s ease-out;
+      }
+
+      &_visible_hidden {
+        opacity: 0;
       }
     }
-      
   }
 }
