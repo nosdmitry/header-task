@@ -19,12 +19,25 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+
+    &_type_selected {
+      color: #1c8a43;
+    }
   }
+
 }
 
 @media (max-width: 1440px) {
   .lang-selector {
     grid-column: 1;
     grid-row: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lang-selector {
+    order: 1;
+    min-height: 30px;
+    padding: 0 30px;
   }
 }

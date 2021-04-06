@@ -35,3 +35,18 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .contacts {      
+    min-height: 30px;
+    padding: 0 30px;
+
+    &__phone {
+      order: 1;
+
+    }
+    &__email {
+      order: 1;
+    }
+  }
+}

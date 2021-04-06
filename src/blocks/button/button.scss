@@ -18,6 +18,7 @@
     min-width: 200px;
     color: #1c8a43;
   }
+
 }
 
 @media (max-width: 1440px) {
@@ -30,6 +31,20 @@
 
     &__products {
       grid-column: 3;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .button {
+    min-height: 50px;
+
+    &__contacts {
+      order: 5;
+    }
+
+    &__products {
+      order: 6;
     }
   }
 }

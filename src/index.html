@@ -13,7 +13,15 @@
 
     <button class="header__logo" aria-label="Логотип"></button>
 
+    <button class="header__close-button" aria-label="Закрыть меню"></button>
+
     <div class="header__content">
+
+      <form class="search search_type_mobile">
+        <input class="search__input search__input_type_mobile" placeholder="Что вы хотите найти?">
+        <button class="search__submit search__submit_type_mobile" aria-label="Поиск"></button>
+      </form>
+
 
       <ul class="navigation">
         <li class="navigation__list"><a class="navigation__link" href="#">Главная</a></li>
@@ -25,7 +33,9 @@
       </ul>
 
       <ul class="lang-selector">
-        <li class="lang-selector__list"><a class="lang-selector__link" href="#">Ru</a></li>
+        <li class="lang-selector__list">
+          <a class="lang-selector__link lang-selector__link_type_selected" href="#">Ru</a>
+        </li>
         <li class="lang-selector__list"><a class="lang-selector__link" href="#">En</a></li>
         <li class="lang-selector__list"><a class="lang-selector__link" href="#">De</a></li>
       </ul>
@@ -39,10 +49,6 @@
       <a class="button button__products">
         <img class="button__img" src=<%=require("./images/menu_1983.png")%>/>Продукты
       </a>
-      <form class="search">
-        <input class="search__input" placeholder="Что вы хотите найти?">
-        <button class="search__submit" aria-label="Поиск"></button>
-      </form>
       <a class="contacts contacts__email" href="#">info@sparta-term.com</a>
 
     </div>

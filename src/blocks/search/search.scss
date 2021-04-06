@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   grid-column: 3/5;
+  grid-row: 2;
 
   &__input {
     margin: 0;
@@ -32,5 +33,36 @@
   .search {
     grid-row: 3;
     grid-column: 4/6;
+  }
+}
+
+@media (max-width: 1024px) {
+  .search{
+    &_type_mobile {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      height: 28px;
+      top: -50px;
+      right: 57px;
+      border: 1px solid #e5e5e5;
+      width: 300px;    
+    }
+
+    &__submit {
+      &_type_mobile {
+        border: 1px solid #e5e5e5;
+        width: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .search {
+    width: 35px;
+  }
+  .search__input_type_mobile {
+    display: none;
   }
 }

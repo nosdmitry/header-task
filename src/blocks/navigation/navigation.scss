@@ -31,3 +31,18 @@
     grid-column: 1 / 6;
   }
 }
+
+@media (max-width: 1024px) {
+  .navigation {
+    padding: 20px 0;
+    order: 2;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__link {
+      margin: 10px 30px;
+    }
+  }
+}
