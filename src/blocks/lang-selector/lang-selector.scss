@@ -21,3 +21,10 @@
     line-height: 20px;
   }
 }
+
+@media (max-width: 1440px) {
+  .lang-selector {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

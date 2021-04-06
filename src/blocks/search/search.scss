@@ -27,3 +27,10 @@
     height: 100%;
   }
 }
+
+@media (max-width: 1440px) {
+  .search {
+    grid-row: 3;
+    grid-column: 4/6;
+  }
+}

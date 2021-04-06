@@ -24,3 +24,14 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 1440px) {
+  .contacts {
+    &__phone {
+      grid-column: 2/4;
+    }
+    &__email {
+      grid-column: 4/6;
+    }
+  }
+}

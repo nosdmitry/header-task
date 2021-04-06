@@ -1,13 +1,11 @@
-$color: red;
 .header {
   background-color: white;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: minmax(250px, 360px) minmax(auto, 1560px);
+  grid-template-columns: minmax(300px, auto) minmax(auto, 1560px);
 
   &__logo {
     min-width: 177px;
-    //max-width: 360px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -22,19 +20,23 @@ $color: red;
 
   &__content {
     width: 100%;
-    border: 1px solid blue;
+    border-left: 1px solid #e5e5e5;
     background-color: #e5e5e5;
-    box-sizing: border-box;
     display: grid;
     grid-template-rows: 60px 60px;
     grid-template-columns: repeat(5, minmax(auto, auto));
     gap: 1px;
   }
 
-  // @media(max-width: 1400px) {
-  //   &__content {
-  //     flex-wrap: wrap;
-  //   }
-  // }
 }
+
+@media (max-width: 1440px) {
+  .header {
+    &__content {
+      grid-template-rows: 50px 50px 50px;
+    }
+  }
+}
+
+
 
