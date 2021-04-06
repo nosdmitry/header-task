@@ -2,7 +2,7 @@
   background-color: white;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: minmax(300px, auto) minmax(auto, 1560px);
+  grid-template-columns: minmax(250px, auto) minmax(auto, 1560px);
   position: relative;
 
   &__logo {
@@ -29,7 +29,7 @@
     gap: 1px;
   }
 
-  &__close-button {
+  &__menu-button {
     display: none;
   }
 
@@ -45,30 +45,38 @@
 
 @media (max-width: 1024px) {
   .header {
-    display: flex;
-    justify-content: space-between;
-    min-height: 70px;
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: auto minmax(100px, 280px) 70px;
+
 
     &__logo {
       max-width: 177px;
       margin-left: 20px;
+      grid-row: 1;
     }
 
     &__content {
+      display: none;
+      flex-direction: column;
       position: absolute;
       max-width: 425px;
       top: 70px;
       right: 0;
-      display: flex;
-      flex-direction: column;
+
+      &_visible_opened {
+        display: flex;
+      }
     }
 
-    &__close-button {
-      width: 30px;
+    &__menu-button {
+      min-width: 30px;
       height: 30px;
       display: block;
+      grid-row: 1;
+      grid-column: 3;
       align-self: center;
-      margin-right: 20px;
+      margin: 0 20px;
       border: none;
       outline: none;
       background: -webkit-linear-gradient(top, #31302f 0, #31302f 20%, #fff 20%, #fff 40%, #31302f 40%, #31302f 60%, #fff 60%, #fff 80%, #31302f 80%, #31302f 100%);

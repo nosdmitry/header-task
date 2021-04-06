@@ -13,15 +13,19 @@
 
     <button class="header__logo" aria-label="Логотип"></button>
 
-    <button class="header__close-button" aria-label="Закрыть меню"></button>
+    <form class="search" id="search_type_mobile">
+      <input class="search__input search__input_type_mobile search__input_visible_opened" placeholder="Что вы хотите найти?">
+      <button class="search__submit search__submit_type_mobile " aria-label="Поиск"></button>
+    </form>
+
+    <button class="header__menu-button" aria-label="Кнопка меню"></button>
 
     <div class="header__content">
 
-      <form class="search search_type_mobile">
-        <input class="search__input search__input_type_mobile" placeholder="Что вы хотите найти?">
-        <button class="search__submit search__submit_type_mobile" aria-label="Поиск"></button>
+      <form class="search" id="search_type_descktop">
+        <input class="search__input search__input_type_descktop" placeholder="Что вы хотите найти?">
+        <button class="search__submit search__submit_type_descktop" aria-label="Поиск"></button>
       </form>
-
 
       <ul class="navigation">
         <li class="navigation__list"><a class="navigation__link" href="#">Главная</a></li>
