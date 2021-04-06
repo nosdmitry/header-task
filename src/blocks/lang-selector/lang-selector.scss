@@ -19,6 +19,11 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+    transition: opacity .2s ease;
+
+    &:hover {
+      opacity: .6;
+    }
 
     &_type_selected {
       color: #1c8a43;

@@ -17,6 +17,7 @@
     background-image: url(../../images/logo__1939.png);
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
   }
 
   &__content {
@@ -57,15 +58,17 @@
     }
 
     &__content {
-      display: none;
+      display: flex;
       flex-direction: column;
       position: absolute;
       max-width: 425px;
       top: 70px;
       right: 0;
+      transform: translateY(-120%);
+      transition: transform .3s ease-out;
 
       &_visible_opened {
-        display: flex;
+        transform: translateY(0);
       }
     }
 
@@ -84,6 +87,12 @@
       background: -o-linear-gradient(top, #31302f 0, #31302f 20%, #fff 20%, #fff 40%, #31302f 40%, #31302f 60%, #fff 60%, #fff 80%, #31302f 80%, #31302f 100%);
       background: -ms-linear-gradient(top, #31302f 0, #31302f 20%, #fff 20%, #fff 40%, #31302f 40%, #31302f 60%, #fff 60%, #fff 80%, #31302f 80%, #31302f 100%);
       background:linear-gradient (top, #31302f 0, #31302f 20%, #fff 20%, #fff 40%, #31302f 40%, #31302f 60%, #fff 60%, #fff 80%, #31302f 80%, #31302f 100%);
+      transition: opacity .2s ease-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .6;
+      }
     }
   }
 }

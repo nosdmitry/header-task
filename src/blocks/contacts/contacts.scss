@@ -4,12 +4,16 @@
   box-sizing: border-box;
   text-decoration: none;
   width: 100%;
-  //max-width: 365px;
   min-width: 210px;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity .2s ease;
+
+  &:hover {
+    opacity: .6;
+  }
 
   &__phone {
     margin: 0;
