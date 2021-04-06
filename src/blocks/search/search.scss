@@ -75,12 +75,15 @@
         position: absolute;
         width: 200px;
         right: 36px;
-        opacity: 1;
-        transition: opacity .2s ease-out;
+        transition: visibility 0s ease 0.4s, opacity 0.4s ease;
+        visibility: hidden;
+        opacity: 0;
       }
 
-      &_visible_hidden {
-        opacity: 0;
+      &_visible_true {
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s;
       }
     }
   }

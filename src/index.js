@@ -5,8 +5,9 @@ const menuContainer = document.querySelector('.header__content');
 const searchFormInput = document.querySelector('.search__input_type_mobile');
 const searchButton = document.querySelector('.search__submit_type_mobile');
 
-function handleSearchButton() {
-  searchFormInput.classList.toggle('search__input_visible_hidden');
+function handleSearchButton(e) {
+  e.preventDefault();
+  searchFormInput.classList.toggle('search__input_visible_true');
 }
 
 function handleMenuClick() {
@@ -17,6 +18,6 @@ menuButton.addEventListener('click', () => {
   handleMenuClick();
 })
 
-searchButton.addEventListener('click', () => {
-  handleSearchButton();
+searchButton.addEventListener('click', (e) => {
+  handleSearchButton(e);
 })
